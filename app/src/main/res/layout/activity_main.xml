@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gusnavanila.konversisuhu2.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="40px"
+        android:text="@string/input_nilai"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/inputan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12px"
+        android:layout_marginRight="12px"
+        android:inputType="number"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="20px"
+        android:text="@string/suhu_awal"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/pilihan_awal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="20px"
+        android:entries="@array/pilihan_suhu" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="40px"
+        android:text="@string/konversi"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/pilihan_akhir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="20px"
+        android:entries="@array/pilihan_suhu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12px"
+        android:layout_marginRight="12px"
+        android:layout_marginTop="40px"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reset" />
+
+        <Button
+            android:id="@+id/btnKonversi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/konvert" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hasilakhir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:gravity="center"
+        android:text="@string/hasil"
+        android:textSize="50sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130px"
+        android:gravity="right"
+        android:text="by gusna ikhsan"
+        android:textSize="20sp" />
+</LinearLayout>
